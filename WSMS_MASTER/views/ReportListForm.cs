@@ -11,10 +11,10 @@ using WSMS_MASTER.Models;
 
 namespace WSMS_MASTER.views
 {
-    public partial class ReportList : Form
+    public partial class ReportListForm : Form
     {
         public LoginColumns userdata { get; set; }
-        public ReportList()
+        public ReportListForm()
         {
             InitializeComponent();
         }

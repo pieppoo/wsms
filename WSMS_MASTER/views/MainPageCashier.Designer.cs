@@ -113,7 +113,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::WSMS_MASTER.Properties.Resources.wsms02;
+            this.pictureBox1.Image = global::WSMS_MASTER.Properties.Resources.motor;
             this.pictureBox1.Location = new System.Drawing.Point(90, 47);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(282, 176);

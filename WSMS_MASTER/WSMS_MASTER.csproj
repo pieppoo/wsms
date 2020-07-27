@@ -98,16 +98,45 @@
   <ItemGroup>
     <Compile Include="Common\Logger.cs" />
     <Compile Include="Common\Utils.cs" />
+    <Compile Include="Models\BrandColumns.cs" />
+    <Compile Include="Models\CategoryColumns.cs" />
     <Compile Include="Models\IRepository.cs" />
     <Compile Include="Models\LoginColumns.cs" />
+    <Compile Include="Models\ProductColumns.cs" />
+    <Compile Include="Models\SalePriceColumns.cs" />
+    <Compile Include="Models\TempProdColumns.cs" />
+    <Compile Include="Models\UnitColumns.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\BrandRepo.cs" />
+    <Compile Include="Repositories\CategoryRepo.cs" />
     <Compile Include="Repositories\LoginRepo.cs" />
+    <Compile Include="Repositories\ProductRepo.cs" />
+    <Compile Include="Repositories\SalePriceRepo.cs" />
+    <Compile Include="Repositories\UnitRepo.cs" />
     <Compile Include="views\Base\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\Base\BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\BrandListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\BrandListForm.Designer.cs">
+      <DependentUpon>BrandListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\CategoryListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\CategoryListForm.Designer.cs">
+      <DependentUpon>CategoryListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ConfirmationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ConfirmationDialog.Designer.cs">
+      <DependentUpon>ConfirmationDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="views\Login.cs">
       <SubType>Form</SubType>
@@ -127,23 +156,47 @@
     <Compile Include="views\MainPageCashier.Designer.cs">
       <DependentUpon>MainPageCashier.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\ManageBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ManageBrand.Designer.cs">
+      <DependentUpon>ManageBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ManageCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ManageCategories.Designer.cs">
+      <DependentUpon>ManageCategories.cs</DependentUpon>
+    </Compile>
     <Compile Include="views\ManagePassword.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="views\ManagePassword.Designer.cs">
       <DependentUpon>ManagePassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\ProductList.cs">
+    <Compile Include="views\ManageSalePrice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\ProductList.Designer.cs">
-      <DependentUpon>ProductList.cs</DependentUpon>
+    <Compile Include="views\ManageSalePrice.Designer.cs">
+      <DependentUpon>ManageSalePrice.cs</DependentUpon>
     </Compile>
-    <Compile Include="views\ReportList.cs">
+    <Compile Include="views\ManageUnit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="views\ReportList.Designer.cs">
-      <DependentUpon>ReportList.cs</DependentUpon>
+    <Compile Include="views\ManageUnit.Designer.cs">
+      <DependentUpon>ManageUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ProductListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ProductListForm.Designer.cs">
+      <DependentUpon>ProductListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="views\ReportListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\ReportListForm.Designer.cs">
+      <DependentUpon>ReportListForm.cs</DependentUpon>
     </Compile>
     <Compile Include="views\ManageProduct.cs">
       <SubType>Form</SubType>
@@ -163,6 +216,12 @@
     <Compile Include="views\Settings\SettingsForm.Designer.cs">
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="views\UnitListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="views\UnitListForm.Designer.cs">
+      <DependentUpon>UnitListForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -176,6 +235,15 @@
     <EmbeddedResource Include="views\Base\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\BrandListForm.resx">
+      <DependentUpon>BrandListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\CategoryListForm.resx">
+      <DependentUpon>CategoryListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ConfirmationDialog.resx">
+      <DependentUpon>ConfirmationDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,14 +253,26 @@
     <EmbeddedResource Include="views\MainPageCashier.resx">
       <DependentUpon>MainPageCashier.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="views\ManageBrand.resx">
+      <DependentUpon>ManageBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ManageCategories.resx">
+      <DependentUpon>ManageCategories.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="views\ManagePassword.resx">
       <DependentUpon>ManagePassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="views\ProductList.resx">
-      <DependentUpon>ProductList.cs</DependentUpon>
+    <EmbeddedResource Include="views\ManageSalePrice.resx">
+      <DependentUpon>ManageSalePrice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="views\ReportList.resx">
-      <DependentUpon>ReportList.cs</DependentUpon>
+    <EmbeddedResource Include="views\ManageUnit.resx">
+      <DependentUpon>ManageUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ProductListForm.resx">
+      <DependentUpon>ProductListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\ReportListForm.resx">
+      <DependentUpon>ReportListForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="views\ManageProduct.resx">
       <DependentUpon>ManageProduct.cs</DependentUpon>
@@ -202,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="views\Settings\SettingsForm.resx">
       <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="views\UnitListForm.resx">
+      <DependentUpon>UnitListForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -236,9 +319,6 @@
     <None Include="Resources\report01.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\report02.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\search.png" />
   </ItemGroup>
   <ItemGroup>
@@ -249,6 +329,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\searchF10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\motor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undraw_report_mx0a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report02.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace WSMS_MASTER.views
 {
-    partial class ProductList
+    partial class ProductListForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductList));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductListForm));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -73,8 +73,8 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.gvproducts = new System.Windows.Forms.DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prodbrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prodcat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prodbrand = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prodcode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prodname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.produnit = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -160,7 +160,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.btpurchase);
+            this.panel1.Controls.Add(this.btadd);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
@@ -187,7 +187,7 @@
             this.btpurchase.Location = new System.Drawing.Point(0, 0);
             this.btpurchase.Margin = new System.Windows.Forms.Padding(0);
             this.btpurchase.Name = "btpurchase";
-            this.btpurchase.Size = new System.Drawing.Size(192, 56);
+            this.btpurchase.Size = new System.Drawing.Size(192, 62);
             this.btpurchase.TabIndex = 0;
             this.btpurchase.Text = "BELI BARANG";
             this.btpurchase.UseVisualStyleBackColor = false;
@@ -199,7 +199,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.btcategory);
+            this.panel2.Controls.Add(this.btedit);
             this.panel2.Location = new System.Drawing.Point(0, 56);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
@@ -238,7 +238,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.btbrand);
+            this.panel3.Controls.Add(this.btdelete);
             this.panel3.Location = new System.Drawing.Point(0, 112);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
@@ -277,7 +277,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.btunit);
+            this.panel4.Controls.Add(this.btsellingprice);
             this.panel4.Location = new System.Drawing.Point(0, 168);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
@@ -316,7 +316,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.btsellingprice);
+            this.panel5.Controls.Add(this.btunit);
             this.panel5.Location = new System.Drawing.Point(0, 224);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
@@ -355,7 +355,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.Controls.Add(this.label7);
-            this.panel6.Controls.Add(this.btadd);
+            this.panel6.Controls.Add(this.btbrand);
             this.panel6.Location = new System.Drawing.Point(0, 280);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
@@ -394,7 +394,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel7.Controls.Add(this.label8);
-            this.panel7.Controls.Add(this.btedit);
+            this.panel7.Controls.Add(this.btcategory);
             this.panel7.Location = new System.Drawing.Point(0, 336);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
@@ -433,7 +433,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.Controls.Add(this.label9);
-            this.panel8.Controls.Add(this.btdelete);
+            this.panel8.Controls.Add(this.btpurchase);
             this.panel8.Location = new System.Drawing.Point(0, 392);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
@@ -460,7 +460,7 @@
             this.btdelete.Location = new System.Drawing.Point(0, 0);
             this.btdelete.Margin = new System.Windows.Forms.Padding(0);
             this.btdelete.Name = "btdelete";
-            this.btdelete.Size = new System.Drawing.Size(192, 62);
+            this.btdelete.Size = new System.Drawing.Size(192, 56);
             this.btdelete.TabIndex = 5;
             this.btdelete.Text = "HAPUS";
             this.btdelete.UseVisualStyleBackColor = false;
@@ -540,6 +540,7 @@
             // 
             this.tbprodname.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbprodname.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tbprodname.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbprodname.Location = new System.Drawing.Point(8, 3);
             this.tbprodname.Name = "tbprodname";
@@ -654,9 +655,6 @@
             // 
             this.gvproducts.AllowUserToAddRows = false;
             this.gvproducts.AllowUserToDeleteRows = false;
-            this.gvproducts.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -668,22 +666,24 @@
             this.gvproducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gvproducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
-            this.prodbrand,
             this.prodcat,
+            this.prodbrand,
             this.prodcode,
             this.prodname,
             this.produnit,
             this.purchaseprice,
             this.barcodeno,
             this.prodstock});
-            this.gvproducts.Location = new System.Drawing.Point(8, 3);
+            this.gvproducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gvproducts.Location = new System.Drawing.Point(0, 0);
             this.gvproducts.MultiSelect = false;
             this.gvproducts.Name = "gvproducts";
             this.gvproducts.ReadOnly = true;
             this.gvproducts.RowHeadersVisible = false;
             this.gvproducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gvproducts.Size = new System.Drawing.Size(567, 273);
+            this.gvproducts.Size = new System.Drawing.Size(589, 280);
             this.gvproducts.TabIndex = 0;
+            this.gvproducts.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gvproducts_CellDoubleClick);
             // 
             // id
             // 
@@ -692,14 +692,6 @@
             this.id.ReadOnly = true;
             this.id.Visible = false;
             // 
-            // prodbrand
-            // 
-            this.prodbrand.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.prodbrand.HeaderText = "Brand";
-            this.prodbrand.Name = "prodbrand";
-            this.prodbrand.ReadOnly = true;
-            this.prodbrand.Width = 77;
-            // 
             // prodcat
             // 
             this.prodcat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
@@ -707,6 +699,14 @@
             this.prodcat.Name = "prodcat";
             this.prodcat.ReadOnly = true;
             this.prodcat.Width = 93;
+            // 
+            // prodbrand
+            // 
+            this.prodbrand.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.prodbrand.HeaderText = "Brand";
+            this.prodbrand.Name = "prodbrand";
+            this.prodbrand.ReadOnly = true;
+            this.prodbrand.Width = 77;
             // 
             // prodcode
             // 
@@ -803,14 +803,15 @@
             this.picrefresh.TabStop = false;
             this.picrefresh.Click += new System.EventHandler(this.picrefresh_Click);
             // 
-            // ProductList
+            // ProductListForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 480);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "ProductList";
+            this.Name = "ProductListForm";
             this.Text = "HaskaTech WSMS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ProductList_Load);
@@ -898,8 +899,8 @@
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prodbrand;
         private System.Windows.Forms.DataGridViewTextBoxColumn prodcat;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prodbrand;
         private System.Windows.Forms.DataGridViewTextBoxColumn prodcode;
         private System.Windows.Forms.DataGridViewTextBoxColumn prodname;
         private System.Windows.Forms.DataGridViewTextBoxColumn produnit;

@@ -30,15 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPageAdmin));
             this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbuser = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btusermgt = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.btreport = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.btdebt = new System.Windows.Forms.Button();
@@ -55,17 +51,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btwarehouse = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btreport = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel9
@@ -74,24 +75,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.Controls.Add(this.pictureBox1);
-            this.panel9.Location = new System.Drawing.Point(348, 71);
+            this.panel9.Location = new System.Drawing.Point(348, 68);
             this.panel9.Name = "panel9";
             this.tableLayoutPanel1.SetRowSpan(this.panel9, 6);
-            this.panel9.Size = new System.Drawing.Size(513, 408);
+            this.panel9.Size = new System.Drawing.Size(513, 389);
             this.panel9.TabIndex = 9;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::WSMS_MASTER.Properties.Resources.wsms02;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(510, 408);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -101,7 +89,7 @@
             this.panel1.Controls.Add(this.lbuser);
             this.panel1.Location = new System.Drawing.Point(348, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(513, 62);
+            this.panel1.Size = new System.Drawing.Size(513, 59);
             this.panel1.TabIndex = 8;
             // 
             // lbuser
@@ -126,7 +114,7 @@
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(345, 68);
+            this.panel8.Size = new System.Drawing.Size(345, 65);
             this.panel8.TabIndex = 1;
             // 
             // label1
@@ -150,51 +138,11 @@
             this.btusermgt.Location = new System.Drawing.Point(0, 0);
             this.btusermgt.Margin = new System.Windows.Forms.Padding(0);
             this.btusermgt.Name = "btusermgt";
-            this.btusermgt.Size = new System.Drawing.Size(345, 68);
+            this.btusermgt.Size = new System.Drawing.Size(345, 65);
             this.btusermgt.TabIndex = 2;
             this.btusermgt.Text = "PENGGUNA";
             this.btusermgt.UseVisualStyleBackColor = false;
             this.btusermgt.Click += new System.EventHandler(this.btusermgt_Click);
-            // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Controls.Add(this.btreport);
-            this.panel7.Location = new System.Drawing.Point(0, 408);
-            this.panel7.Margin = new System.Windows.Forms.Padding(0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(345, 74);
-            this.panel7.TabIndex = 13;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(3, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(19, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "F7";
-            // 
-            // btreport
-            // 
-            this.btreport.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btreport.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btreport.FlatAppearance.BorderSize = 0;
-            this.btreport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btreport.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btreport.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btreport.Location = new System.Drawing.Point(0, 0);
-            this.btreport.Margin = new System.Windows.Forms.Padding(0);
-            this.btreport.Name = "btreport";
-            this.btreport.Size = new System.Drawing.Size(345, 74);
-            this.btreport.TabIndex = 14;
-            this.btreport.Text = "LAPORAN";
-            this.btreport.UseVisualStyleBackColor = false;
-            this.btreport.Click += new System.EventHandler(this.btreport_Click);
             // 
             // panel6
             // 
@@ -203,10 +151,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.btdebt);
-            this.panel6.Location = new System.Drawing.Point(0, 340);
+            this.panel6.Location = new System.Drawing.Point(0, 329);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(345, 68);
+            this.panel6.Size = new System.Drawing.Size(345, 66);
             this.panel6.TabIndex = 11;
             // 
             // label6
@@ -230,7 +178,7 @@
             this.btdebt.Location = new System.Drawing.Point(0, 0);
             this.btdebt.Margin = new System.Windows.Forms.Padding(0);
             this.btdebt.Name = "btdebt";
-            this.btdebt.Size = new System.Drawing.Size(345, 68);
+            this.btdebt.Size = new System.Drawing.Size(345, 66);
             this.btdebt.TabIndex = 12;
             this.btdebt.Text = "HUTANG";
             this.btdebt.UseVisualStyleBackColor = false;
@@ -242,10 +190,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.btsupplier);
-            this.panel5.Location = new System.Drawing.Point(0, 272);
+            this.panel5.Location = new System.Drawing.Point(0, 263);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(345, 68);
+            this.panel5.Size = new System.Drawing.Size(345, 66);
             this.panel5.TabIndex = 9;
             // 
             // label5
@@ -269,7 +217,7 @@
             this.btsupplier.Location = new System.Drawing.Point(0, 0);
             this.btsupplier.Margin = new System.Windows.Forms.Padding(0);
             this.btsupplier.Name = "btsupplier";
-            this.btsupplier.Size = new System.Drawing.Size(345, 68);
+            this.btsupplier.Size = new System.Drawing.Size(345, 66);
             this.btsupplier.TabIndex = 10;
             this.btsupplier.Text = "SUPPLIER";
             this.btsupplier.UseVisualStyleBackColor = false;
@@ -282,10 +230,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.btcustomer);
-            this.panel4.Location = new System.Drawing.Point(0, 204);
+            this.panel4.Location = new System.Drawing.Point(0, 197);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(345, 68);
+            this.panel4.Size = new System.Drawing.Size(345, 66);
             this.panel4.TabIndex = 7;
             // 
             // label4
@@ -309,7 +257,7 @@
             this.btcustomer.Location = new System.Drawing.Point(0, 0);
             this.btcustomer.Margin = new System.Windows.Forms.Padding(0);
             this.btcustomer.Name = "btcustomer";
-            this.btcustomer.Size = new System.Drawing.Size(345, 68);
+            this.btcustomer.Size = new System.Drawing.Size(345, 66);
             this.btcustomer.TabIndex = 8;
             this.btcustomer.Text = "PELANGGAN";
             this.btcustomer.UseVisualStyleBackColor = false;
@@ -321,10 +269,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.btsale);
-            this.panel3.Location = new System.Drawing.Point(0, 136);
+            this.panel3.Location = new System.Drawing.Point(0, 131);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(345, 68);
+            this.panel3.Size = new System.Drawing.Size(345, 66);
             this.panel3.TabIndex = 5;
             // 
             // label3
@@ -347,7 +295,7 @@
             this.btsale.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btsale.Location = new System.Drawing.Point(0, 0);
             this.btsale.Name = "btsale";
-            this.btsale.Size = new System.Drawing.Size(345, 68);
+            this.btsale.Size = new System.Drawing.Size(345, 66);
             this.btsale.TabIndex = 6;
             this.btsale.Text = "PENJUALAN";
             this.btsale.UseVisualStyleBackColor = false;
@@ -359,10 +307,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btwarehouse);
-            this.panel2.Location = new System.Drawing.Point(0, 68);
+            this.panel2.Location = new System.Drawing.Point(0, 65);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(345, 68);
+            this.panel2.Size = new System.Drawing.Size(345, 66);
             this.panel2.TabIndex = 3;
             // 
             // label2
@@ -386,7 +334,7 @@
             this.btwarehouse.Location = new System.Drawing.Point(0, 0);
             this.btwarehouse.Margin = new System.Windows.Forms.Padding(0);
             this.btwarehouse.Name = "btwarehouse";
-            this.btwarehouse.Size = new System.Drawing.Size(345, 68);
+            this.btwarehouse.Size = new System.Drawing.Size(345, 66);
             this.btwarehouse.TabIndex = 4;
             this.btwarehouse.Text = "GUDANG";
             this.btwarehouse.UseVisualStyleBackColor = false;
@@ -409,19 +357,79 @@
             this.tableLayoutPanel1.Controls.Add(this.panel8, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel9, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel10, 1, 6);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(25, 30);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 7;
+            this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28572F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(864, 482);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // panel7
+            // 
+            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.btreport);
+            this.panel7.Location = new System.Drawing.Point(0, 395);
+            this.panel7.Margin = new System.Windows.Forms.Padding(0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(345, 65);
+            this.panel7.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(3, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(19, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "F7";
+            // 
+            // btreport
+            // 
+            this.btreport.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btreport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btreport.FlatAppearance.BorderSize = 0;
+            this.btreport.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btreport.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btreport.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btreport.Location = new System.Drawing.Point(0, 0);
+            this.btreport.Margin = new System.Windows.Forms.Padding(0);
+            this.btreport.Name = "btreport";
+            this.btreport.Size = new System.Drawing.Size(345, 65);
+            this.btreport.TabIndex = 14;
+            this.btreport.Text = "LAPORAN";
+            this.btreport.UseVisualStyleBackColor = false;
+            this.btreport.Click += new System.EventHandler(this.btreport_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel10.Location = new System.Drawing.Point(3, 463);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(339, 16);
+            this.panel10.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::WSMS_MASTER.Properties.Resources.motor;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(513, 389);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // MainPageAdmin
             // 
@@ -429,20 +437,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(922, 538);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MainPageAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HaskaTech WSMS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainPageAdmin_Load);
             this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -454,6 +461,9 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -478,13 +488,14 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btdebt;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btreport;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btusermgt;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbuser;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btreport;
+        private System.Windows.Forms.Panel panel10;
     }
 }

@@ -21,6 +21,8 @@ namespace WSMS_MASTER.views
 
         private void MainPageAdmin_Load(object sender, EventArgs e)
         {
+           
+
             lbuser.Text = "Halo, " + userdata.fullname;
         }
 
@@ -30,7 +32,7 @@ namespace WSMS_MASTER.views
         }
         private void btreport_Click(object sender, EventArgs e)
         {
-            var form = new ReportList();
+            var form = new ReportListForm();
             form.userdata = userdata;
             Hide();
             form.ShowDialog();
@@ -39,7 +41,7 @@ namespace WSMS_MASTER.views
 
         private void btwarehouse_Click(object sender, EventArgs e)
         {
-            var form = new ProductList();
+            var form = new ProductListForm();
             form.userdata = userdata;
             Hide();
             form.ShowDialog();

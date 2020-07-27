@@ -32,6 +32,10 @@ namespace WSMS_MASTER.Repositories
         {
             throw new NotImplementedException();
         }
+        public LoginColumns GetByAny(int anyvar)
+        {
+            throw new NotImplementedException();
+        }
 
         public List<LoginColumns> GetAll()
         {

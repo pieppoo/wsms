@@ -11,6 +11,7 @@ namespace WSMS_MASTER.Models
         List<T> GetAll();
         bool Add(T entity);
         T GetById(int id);
+        T GetByAny(int id);
         bool Update(T entity);
         bool Delete(int id);
         List<T> Search(params object[] args);

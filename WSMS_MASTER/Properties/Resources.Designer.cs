@@ -73,6 +73,16 @@ namespace WSMS_MASTER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap motor {
+            get {
+                object obj = ResourceManager.GetObject("motor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pc01 {
             get {
                 object obj = ResourceManager.GetObject("pc01", resourceCulture);
@@ -93,9 +103,9 @@ namespace WSMS_MASTER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap report02 {
+        internal static System.Drawing.Bitmap search {
             get {
-                object obj = ResourceManager.GetObject("report02", resourceCulture);
+                object obj = ResourceManager.GetObject("search", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +113,9 @@ namespace WSMS_MASTER.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap search {
+        internal static System.Drawing.Bitmap undraw_report_mx0a {
             get {
-                object obj = ResourceManager.GetObject("search", resourceCulture);
+                object obj = ResourceManager.GetObject("undraw_report_mx0a", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,16 +136,6 @@ namespace WSMS_MASTER.Properties {
         internal static System.Drawing.Bitmap wsms01 {
             get {
                 object obj = ResourceManager.GetObject("wsms01", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap wsms02 {
-            get {
-                object obj = ResourceManager.GetObject("wsms02", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
